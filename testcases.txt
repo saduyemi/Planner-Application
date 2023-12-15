@@ -1,0 +1,44 @@
+
+    //string test[] = {"9:45", "7:55", "3:15", "10:00", "1:45", "4:30"}; // Events: AM, PM, PM, AM, PM, AM
+   //int length = sizeof(test)/sizeof(test[0]);
+
+   //string test2[] = {"7:55", "9:45"}; // Events: PM, AM
+   //int length2 = sizeof(test2)/sizeof(test2[0]);
+   
+   //string test3[] = {"7:55", "9:45", "8:00"}; // Events: PM, AM, PM
+   //int length3 = sizeof(test3)/sizeof(test3[0]);
+   
+   //string test4[] = {"12:45", "8:15", "9:00", "2:45"}; // Events: AM, AM, AM, PM Note: Give 12 AM - 12:59 AM priority of 0, AM priority of 1, and PM priority of 2 
+   //int length4 = sizeof(test4)/sizeof(test4[0]);
+   
+   //string test5[] = {"12:00", "1:00", "2:00", "3:00", "4:00", "5:00", "6:00", "7:00"}; // Events: AM, AM, AM, AM, AM, AM, AM, AM
+   //int length5 = sizeof(test5)/sizeof(test5[0]);
+   
+   //string test6[] = {"1:45", "2:00", "12:00", "8:00", "12:00"}; // Events: PM, AM, AM, PM, PM
+   //int length6 = sizeof(test6)/sizeof(test6[0]);
+   
+   //string test7[] = {"2:00", "1:00", "4:00", "1:00", "2:00", "12:00", "7:00", "9:00", "11:00", "12:00"}; // Events: AM, AM, PM, PM, PM, PM, AM, AM, AM, PM
+   //int length7 = sizeof(test7)/sizeof(test7[0]);
+   
+   /*append(&head);
+   
+   append(&head);
+   
+   cout << "Print List: ";
+   print(head);
+   cout << endl;
+    */
+    
+    for (int i = 0; i < length7; i++) {
+        append(&head,test7[i]);
+    }
+    
+    cout << "Original: ";
+    print(head);
+    cout << endl;
+    
+    reorganize(&head);
+    
+    cout << "Reorganized: ";
+    print(head);
+    cout << endl;
